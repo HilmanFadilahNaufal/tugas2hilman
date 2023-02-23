@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  margin-top: 20px;
+  width: 500px;
+  border: 1px solid rgb(245, 41, 184);
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.card1 {
+  margin-top: 20px;
+  width: 510px;
+  border: 1px solid rgb(245, 41, 184);
+  padding: 15px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.card2 {
+  margin-top: 20px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgb(245, 41, 184);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card h2, .card p {
+  margin: 0;
+}
+
+.card1 p {
+  margin: 0;
+}
+
+.card2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card3 {
+  margin-top: 20px;
+  width: 500px;
+  border: 1px solid rgb(245, 41, 184);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.color-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin: 0;
+}
+
+.color-box-1 {
+  background-color: red;
+}
+
+.color-box-2 {
+  background-color: yellow;
+}
+
+.color-box-3 {
+  background-color: green;
+}
+
+.color-box-4 {
+  background-color: blue;
 }

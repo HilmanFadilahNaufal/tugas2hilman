@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import avanza from './img/avanza.jpg'
+function App() {
+  return (
+    <div className="container">
+      <div className="card">
+        <h2>Hi,Nama Saya Hilman_Fadilah</h2>
+        <p>senang bisa mengenalmu!</p>
+      </div>
+      <div className="card1">
+        <p>dibawah ini adalah gambar mobil</p>
+      </div>
+      <div className="card2">
+      <img src={avanza} alt='gambar'/>
+      </div>
+      <div className="card3">
+        <div className="color-boxes">
+          <span className="color-box" style={{backgroundColor: 'red'}}></span>
+          <span className="color-box" style={{backgroundColor: 'yellow'}}></span>
+          <span className="color-box" style={{backgroundColor: 'green'}}></span>
+          <span className="color-box" style={{backgroundColor: 'blue'}}></span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
